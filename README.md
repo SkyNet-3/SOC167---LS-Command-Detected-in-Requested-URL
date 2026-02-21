@@ -63,8 +63,8 @@ write your analyst notes from the case. click confirm and youre finished! Next c
 <img src="https://i.imgur.com/Ko3O89O.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Lastly, the alert triggered was a False Positive because the security system incorrectly identified this as an ls payloads injection being delivered to the web server :  <br/>
-<img src="https://i.imgur.com/WmQCfs4.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Lastly, the alert triggered was a False Positive because the security system incorrectly identified this as an ls payloads injection being delivered to the web server:  <br/>
+<img src="https://i.imgur.com/XLox3f7.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 </p>
