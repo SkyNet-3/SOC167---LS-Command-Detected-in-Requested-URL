@@ -2,7 +2,7 @@
 
 
 <h2>Description</h2>
-This lab reviews a possible CMDi payload alert triggered by	SOC167 - LS Command Detected in Requested URL. The HTTP request seems to contain a modified version of the OS command "ls" in the URL parameter. This OS command is typically harmless but commonly used by attackers as a probing technique to determine whether a web application is vulnerable to command injections. Based on the information in the alert, the input "?s=" is most likely what triggered the security rule.At first glance, this could potentially be a false positive, but further analysis is needed to determine whether any real malicious activity occurred against the web application.
+This lab reviews a possible CMDi payload alert triggered by	SOC167 - LS Command Detected in Requested URL. The HTTP request seems to contain a modified version of the OS command "ls" in the URL parameter. This OS command is typically harmless but commonly used by attackers as a probing technique to determine whether a web application is vulnerable to command injections. Based on the information in the alert, the input "?s" and or the ls at the end of the word "skills" is most likely what triggered the security rule. At first glance, this could potentially be a false positive, but further analysis is needed to determine whether any real malicious activity occurred against the web application.
 <br />
 
 
@@ -28,7 +28,7 @@ After taking ownership of the case, very simply look at the rule name and examin
 <img src="https://i.imgur.com/JWl6L2J.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-The specific pattern/signature that the rule was detecting seems to be "?s", which looks very close to the "ls" command that triggered the alert. There are also several outbound HTTPS requests being to Letsdefend.io made from an Internal IP address that belongs to ElliotPRD : <br/>
+The specific pattern/signature that the rule was detecting seems to be "?s" and or the "ls" in the word skills, which looks very close to the actual "ls" command that triggered the alert. There are also several outbound HTTPS requests being to Letsdefend.io made from an Internal IP address that belongs to ElliotPRD : <br/>
 <img src="https://i.imgur.com/PDzfE8J.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/wRFSJbu.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
